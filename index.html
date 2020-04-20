@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+     <link href="https://unpkg.com/material-components-web@v4.0.0/dist/material-components-web.min.css" rel="stylesheet">
+  <script src="https://unpkg.com/material-components-web@v4.0.0/dist/material-components-web.min.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  </head>
+  <body>
+    <script src="script.js"></script>
+    
+    <aside class="mdc-drawer mdc-drawer--modal">
+    <div class="mdc-drawer__content">
+      <nav class="mdc-list">
+        <a class="mdc-list-item mdc-list-item--activated" href="#" aria-current="page">
+          <i class="material-icons mdc-list-item__graphic" aria-hidden="true">inbox</i>
+          <span class="mdc-list-item__text">Home</span>
+        </a>
+        <a class="mdc-list-item" href="#">
+          <i class="material-icons mdc-list-item__graphic" aria-hidden="true">send</i>
+          <span class="mdc-list-item__text">Data</span>
+        </a>
+        <a class="mdc-list-item" href="#">
+          <i class="material-icons mdc-list-item__graphic" aria-hidden="true">drafts</i>
+          <span class="mdc-list-item__text">About</span>
+        </a>
+      </nav>
+    </div>
+  </aside>
+
+  <div class="mdc-drawer-scrim"></div>
+
+<header class="mdc-top-app-bar">
+  <div class="mdc-top-app-bar__row">
+    <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+      <span class="mdc-top-app-bar__title">FIND OUT DATA ON THE COVID-19!</span>
+    </section>
+    <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end" role="toolbar">
+      <button class="material-icons mdc-top-app-bar__action-item mdc-icon-button" aria-label="Seach this page" >search</button>
+      <button class="material-icons mdc-top-app-bar__action-item mdc-icon-button" onclick="dataTable();" aria-label="Data this page" >date_range</button>
+      <button class="material-icons mdc-top-app-bar__action-item mdc-icon-button" aria-label="Graph this page">trending_up</button>
+    </section>
+  </div>
+</header>
+
+
+             <div
+          class="view" 
+             id="Home" >
+          <img src="https://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/article_thumbnails/news/2020/01_2020/coronavirus_1/1800x1200_coronavirus_1.jpg" alt="pictureOne" width="200" height="200">
+
+      </div>
+      
+      <div 
+           class="view"
+              id="Data">
+          <img src="https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Libraries/Production+Library/31-01-20-coronavirus-digital-image-cdc1.jpg/image770x420cropped.jpg" alt="pictureTwo" width="300" height="200">
+      </div>
+
+        <div1
+         class="container">
+         <div 
+              class="one" id="paragraph"> 
+              <p1>
+             Hello there! Nice to meet you! Wanna find out the total number of cases and confirmed deaths of each country?
+             Below type all the countries you are interested in, then add them to your list!
+             Once you are done, click on the data icon for the data! Stay informed and stay safe! </p1>
+      </div>
+      </div1>
+
+        
+
+        <label2 id="countryId" class= "countryDatalist" for="myCountries">Enter A Country: </label2>
+        <input type="text" name="text" id="inputText" list="countryList">
+        <datalist id="countryList"> 
+                 <option value="Afghanistan">
+                 <option value="Albania">                   
+                 <option value="Algeria">                   
+                 <option value="Andorra">                   
+                 <option value="Angola">                    
+                 <option value="Anrigua and Barbuda">      
+                 <option value="Argentina">                 
+                 <option value="Armenia">                   
+                 <option value="Australia">                 
+                 <option value="Austria">                   
+                 <option value="Azerbaijan">                
+                 <option value="Bahamas">                   
+                 <option value="Bahrain">                   
+                 <option value="Bangladesh">                
+                 <option value="Belarus">               
+                 <option value="Belize">             
+                 <option value="Belgium">           
+                 <option value="Benin">         
+                 <option value="Bhutan">       
+                 <option value="Bolivia">     
+                 <option value="Bosnia and Herzegovina">   
+                 <option value="Botswana"> 
+                 <option value="Brazil">
+                 <option value="Brunei">
+                 <option value="Bulgaria">
+                 <option value="Burkina Faso">
+                 <option value="Burma">
+                 <option value="Burundi">
+                 <option value="Cabo Verde">
+                 <option value="Cambodia">
+                 <option value="Cameroon">
+                 <option value="Canada">
+                 <option value="Central African Republic">
+                 <option value="Chad">
+                 <option value="Chile">
+                 <option value="China">
+                 <option value="Columbia">
+                 <option value="Congo (Brazzaville)">
+                 <option value="Congo (Kinshasa)">
+                 <option value="Costa Rica">
+                 <option value="Cote d;Ivoire">
+                 <option value="Croatia">
+                 <option value="Cuba">
+                 <option value="Cyprus">
+                 <option value="Czechia">
+                 <option value="Denmark">
+                 <option value="Diamond Princess">
+                 <option value="Djibouti">
+                 <option value="Dominica">
+                 <option value="Dominican Republic ">
+                 <option value="Ecuador">
+                 <option value="Egypt">
+                 <option value="El salvador">
+                 <option value="Estonia">
+                 <option value="Eswatini">
+                 <option value="Ethiopia">
+                 <option value="Fiji">
+                 <option value="Finland">
+                 <option value="France">
+                 <option value="Gabon">
+                 <option value="Gambia">
+                 <option value="Georgia">
+                 <option value="Germany">
+                 <option value="Ghana">
+                 <option value="Greece">
+                 <option value="Grenada">
+                 <option value="Guatemala">
+                 <option value="Guinea">
+                 <option value="Guinea-Bissau">
+                 <option value="Guyana">
+                 <option value="Haiti">
+                 <option value="Holy See">
+                 <option value="Honduras">
+                 <option value="Hungary">
+                 <option value="Iceland">
+                 <option value="India">
+                 <option value="Indonesia">
+                 <option value="Iran">
+                 <option value="Iraq">
+                 <option value="Ireland">
+                 <option value="Israel">
+                 <option value="Italy">
+                 <option value="Jamaica">
+                 <option value="Japan">
+                 <option value="Jordan">
+                 <option value="Kazakhstan">
+                 <option value="Kenya">
+                 <option value="Korea, South">
+                 <option value="Kosovo">
+                 <option value="Kuwait">
+                 <option value="Kyrgyzstan">
+                 <option value="Laos">
+                 <option value="Latvia" >    
+                 <option value="Lebanon">        
+                 <option value="Liberia">       
+                 <option value="Libya">       
+                 <option value="Liechtenstein ">     
+                 <option value="Lithuania">   
+                 <option value="Luxembourg"> 
+                 <option value="Madagascar"> 
+                 <option value="Malawai">    
+                 <option value="Malaysia">  
+                 <option value="Maldives">
+                 <option value="Mali"> 
+                 <option value="Malta"> 
+                 <option value="Mauritania ">
+                 <option value="Mauritius "> 
+                 <option value="Mexico"> 
+                 <option value="Moldova"> 
+                 <option value="Monoca"> 
+                 <option value="Mongolia"> 
+                 <option value="Montenegro ">
+                 <option value="Morocco"> 
+                 <option value="Mozambique"> 
+                 <option value="MS Zaandam ">
+                 <option value="Namibia"> 
+                 <option value="Nepal">    
+                 <option value="Netherlands"> 
+                 <option value="New Zealand">   
+                 <option value="Nicaragua">  
+                 <option value="Niger">   
+                 <option value="Nigeria"> 
+                 <option value="Oman">
+                 <option value="Pakistan">
+                 <option value="Panama">
+                 <option value="Papua New Guinea ">         
+                 <option value="Paraguay">      
+                 <option value="Peru">    
+                 <option value="Phillippines">  
+                 <option value="Poland">
+                 <option value="Portugal">
+                 <option value="Qatar">
+                 <option value="Romania">
+                 <option value="Russia">
+                 <option value="Rwanda">
+                 <option value="Saint Lucia">
+                 <option value="Saint Vincent and the Grenadines">   
+                 <option value="Saint Kitts and Nevis">   
+                 <option value="San Marina">  
+                 <option value="Sao Tome and Principe">  
+                 <option value="Saudi Arabia">  
+                 <option value="Senegal">   
+                 <option value="Serbia">   
+                 <option value="Seychelles">   
+                 <option value="Sierra Leone">      
+                 <option value="Singapore">       
+                 <option value="Slovakia">       
+                 <option value="Slovenia">       
+                 <option value="Somalia">       
+                 <option value="South Africa">       
+                 <option value="South Sudan">       
+                 <option value="Spain">       
+                 <option value="Sri Lanka">       
+                 <option value="Sudan">       
+                 <option value="Suriname">        
+                 <option value="Sweden">        
+                 <option value="Switzerland">      
+                 <option value="Syria">       
+                 <option value="Taiwan">      
+                 <option value="Tanzania">       
+                 <option value="Thailand">        
+                 <option value="Timor-Leste">       
+                 <option value="Togo">       
+                 <option value="Trinidad and Tobago">    
+                 <option value="Tunisia">     
+                 <option value="Turkey">     
+                 <option value="Uganda">       
+                 <option value="Ukraine">     
+                 <option value="United Arab Emirates">   
+                 <option value="United Kingdom">    
+                 <option value="Uruguay">      
+                 <option value="US">    
+                 <option value="Uzbekistan">      
+                 <option value="Venezuela">        
+                 <option value="Vietnam">      
+                 <option value="West Bank and Gaza">    
+                 <option value="Western Sahara">     
+                 <option value="Yemen">   
+                 <option value="Zambia">                  
+                 <option value="Zimbabwe">                 
+          </datalist>
+        <button id = "button1" class="button" onclick="pushData();">ADD</button>
+        <button id="button2" onclick="clearData();">Clear</button>
+        <p id="p1">  Selected Countries: </p>
+        <p id="pText"></p>
+        
+        
+        <button3>hellooooo</button3>
+        <table class="table table-stripped" >
+            <thead>
+              <tr>
+                  <th> Country:    </th>
+                  <th> Confirmed:    </th>
+                  <th> Deaths:    </th>
+                  <th> Recovered:    </th>
+              </tr>
+             
+          <tbody id="data3" >
+
+          </tbody>
+        </table>
+
+        
+        <script src="https://code.jquery.com/jquery-3.4.1.js"></script
+
+       
+
+    </body>
+</html>
+
+
+
+
+
+
+
+
+  </body>
+</html>
